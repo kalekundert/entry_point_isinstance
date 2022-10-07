@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "entry_point_isinstance"
+authors = [
+  {name = "Kale Kundert", email = "kale@thekunderts.net"},
+]
+readme = "README.rst"
+version = "0.0.0"
+description = "Reproduce a bug involving entry points and ``isinstance()``."
+requires-python = "~=3.10"
+dependencies = []
+
+[project.entry-points.entry_point_isinstance]
+my_class = "entry_point_isinstance:MyClass"
